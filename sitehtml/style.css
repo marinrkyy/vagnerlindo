@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f6fa;
+    color: #333;
+}
+
+header {
+    background: #023e8a;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #0077b6;
+}
+
+nav button {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav button:hover,
+nav button.active {
+    background: #0096c7;
+}
+
+.conteudo {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #023e8a;
+}
+
+.escondido {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    background: #023e8a;
+    color: white;
+    padding: 12px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+ul {
+    line-height: 1.8;
+}
