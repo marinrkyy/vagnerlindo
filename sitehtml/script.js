@@ -1,17 +1,10 @@
-function abrirAba(id) {
-    // esconder todas as seções
-    document.querySelectorAll('.conteudo').forEach(section => {
-        section.classList.add('escondido');
-    });
+function abrirAba(aba) {
+    const secoes = document.querySelectorAll(".conteudo");
+    const botoes = document.querySelectorAll(".aba");
 
-    // desativar todos os botões
-    document.querySelectorAll('.aba').forEach(btn => {
-        btn.classList.remove('active');
-    });
+    secoes.forEach(sec => sec.classList.add("escondido"));
+    botoes.forEach(btn => btn.classList.remove("active"));
 
-    // mostrar a aba clicada
-    document.getElementById(id).classList.remove('escondido');
-
-    // ativar botão clicado
-    event.target.classList.add('active');
+    document.getElementById(aba).classList.remove("escondido");
+    event.target.classList.add("active");
 }
