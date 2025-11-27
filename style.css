@@ -1,78 +1,176 @@
-body {
+/* ===== RESET ===== */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #eef1f5;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background: #2b58d4;
-    color: white;
+body {
+    overflow-x: hidden;
+    background: #000000;
+    color: #d9e6ff;
+    font-family: "Orbitron", Arial, sans-serif;
+}
+
+
+/* ===== FUNDO MATRIX ===== */
+#matrix {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    background: black;
+}
+
+
+/* ===== GLASS EFFECT ===== */
+.glass {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
     padding: 20px;
-    text-align: center;
+    margin: 20px auto;
+    width: 85%;
+    animation: fadeIn 1s ease;
 }
 
-nav {
-    background: #1a1a1a;
+
+/* ===== TÍTULOS ===== */
+.titulo {
+    font-size: 3rem;
+    color: #5dbbff;
+    text-shadow: 0 0 15px #00b7ff;
+}
+
+.subtitulo {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.titulo-secao {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #6cd2ff;
+    text-shadow: 0 0 8px #00eaff;
+}
+
+
+/* ===== MENU ===== */
+.menu {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    padding: 12px;
+    gap: 12px;
 }
 
 .aba {
+    background: transparent;
     padding: 10px 20px;
-    background: #333;
-    border: none;
-    color: white;
+    color: #8ad3ff;
+    border: 1px solid #009dff;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
+    transition: 0.3s;
+    text-shadow: 0 0 6px #009dff;
 }
 
 .aba:hover {
-    background: #555;
+    background: rgba(0, 204, 255, 0.2);
+    box-shadow: 0 0 10px #00eaff;
 }
 
 .active {
-    background: #2b58d4;
+    background: #009dff;
+    color: white;
+    box-shadow: 0 0 15px #00c8ff;
 }
 
+
+/* ===== CONTEÚDOS ===== */
 .conteudo {
-    padding: 20px;
+    animation: fadeIn 0.8s ease;
 }
 
 .escondido {
     display: none;
 }
 
-.botao {
-    background: #2b58d4;
-    color: white;
-    padding: 10px 14px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-block;
+
+/* ===== ANIMAÇÃO FADE ===== */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(15px);}
+    to {opacity: 1; transform: translateY(0);}
 }
 
-footer {
-    text-align: center;
-    background: #222;
-    padding: 12px;
-    color: white;
-    margin-top: 30px;
+
+/* ===== CARDS FUTURISTAS ===== */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
+.neon-card {
+    background: rgba(0, 174, 255, 0.1);
+    border: 1px solid #00cfff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #009dff inset;
+    transition: 0.3s;
+}
+
+.neon-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px #00eaff, 0 0 12px #009dff inset;
+}
+
+
+/* ===== LINKS NEON ===== */
+.link-neon {
+    color: #76eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+.link-neon:hover {
+    color: white;
+    text-shadow: 0 0 18px #00ffff;
+}
+
+
+/* ===== FORM ===== */
 .formulario input,
 .formulario textarea {
     width: 100%;
-    padding: 10px;
-    margin: 8px 0;
+    padding: 12px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #00c8ff;
+    color: #c6eaff;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
-.formulario button {
-    padding: 10px;
-    background: #2b58d4;
-    color: white;
-    border: none;
-    cursor: pointer;
+.btn-neon {
+    padding: 12px;
     width: 100%;
+    background: #009dff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #00eaff;
+    transition: 0.3s;
+}
+
+.btn-neon:hover {
+    box-shadow: 0 0 25px #00eaff;
+}
+
+
+/* ===== RODAPÉ ===== */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
 }
