@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef1f5;
+}
+
+header {
+    background: #2b58d4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+}
+
+.aba {
+    padding: 10px 20px;
+    background: #333;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.aba:hover {
+    background: #555;
+}
+
+.active {
+    background: #2b58d4;
+}
+
+.conteudo {
+    padding: 20px;
+}
+
+.escondido {
+    display: none;
+}
+
+.botao {
+    background: #2b58d4;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    padding: 12px;
+    color: white;
+    margin-top: 30px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.formulario button {
+    padding: 10px;
+    background: #2b58d4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}

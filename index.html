@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EACNT - Palestras e Conscientização</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>EACNT – Educação e Atenção ao Comportamento nas Novas Tecnologias</h1>
+    <p class="subtitulo">Conscientizando para um uso saudável da tecnologia</p>
+</header>
+
+<nav>
+    <button class="aba active" onclick="abrirAba('home')">Início</button>
+    <button class="aba" onclick="abrirAba('palestras')">Palestras</button>
+    <button class="aba" onclick="abrirAba('maleficios')">Malefícios</button>
+    <button class="aba" onclick="abrirAba('dicas')">Dicas Saudáveis</button>
+    <button class="aba" onclick="abrirAba('links')">Links Úteis</button>
+    <button class="aba" onclick="abrirAba('contato')">Contato</button>
+</nav>
+
+<section id="home" class="conteudo">
+    <h2>Bem-vindo ao EACNT</h2>
+    <p>
+        O <strong>EACNT</strong> é um projeto dedicado à conscientização sobre os impactos do uso excessivo de
+        telas. Aqui você encontra informações, palestras e materiais educativos para promover um uso equilibrado.
+    </p>
+
+    <h3>📱 Tópicos sobre o uso excessivo de telas</h3>
+
+    <ul class="lista-home">
+        <li><strong>Problemas físicos:</strong> fadiga ocular, dores, sedentarismo e má postura.</li>
+        <li><strong>Consequências mentais:</strong> ansiedade, dependência digital, irritabilidade.</li>
+        <li><strong>Impacto em crianças:</strong> queda de atenção, menos socialização e riscos online.</li>
+        <li><strong>Produtividade:</strong> distrações, procrastinação e excesso de estímulos.</li>
+    </ul>
+
+    <a class="botao" onclick="abrirAba('dicas')">Veja dicas para reduzir →</a>
+</section>
+
+<section id="palestras" class="conteudo escondido">
+    <h2>Palestras EACNT</h2>
+    <p>Levamos conhecimento atualizado e dinâmico para escolas, empresas e comunidades.</p>
+
+    <ul>
+        <li><strong>Uso de telas na infância</strong></li>
+        <li><strong>Vício digital e prevenção</strong></li>
+        <li><strong>Saúde mental e tecnologia</strong></li>
+        <li><strong>Equilíbrio digital no dia a dia</strong></li>
+    </ul>
+
+    <p><a href="https://www.youtube.com" target="_blank">Assista um exemplo de palestra</a></p>
+</section>
+
+<section id="maleficios" class="conteudo escondido">
+    <h2>Malefícios do Uso Excessivo</h2>
+
+    <h3>⚠️ Problemas físicos</h3>
+    <ul>
+        <li>Distúrbios do sono</li>
+        <li>Dores nas costas e pescoço</li>
+        <li>Fadiga ocular</li>
+    </ul>
+
+    <h3>⚠️ Problemas psicológicos</h3>
+    <ul>
+        <li>Ansiedade</li>
+        <li>Dependência</li>
+        <li>Dificuldade de foco</li>
+    </ul>
+</section>
+
+<section id="dicas" class="conteudo escondido">
+    <h2>Dicas Saudáveis</h2>
+
+    <ul>
+        <li>📵 Evite telas 1h antes de dormir</li>
+        <li>🌿 Faça pausas a cada 40 minutos</li>
+        <li>📚 Realize atividades fora das telas</li>
+        <li>🔔 Desative notificações desnecessárias</li>
+        <li>⌛ Use apps de controle de uso</li>
+    </ul>
+
+    <h3>Ferramentas úteis:</h3>
+    <ul>
+        <li><a href="https://digitalwellbeing.google" target="_blank">Google Bem-Estar Digital</a></li>
+        <li><a href="https://forestapp.cc" target="_blank">Forest App</a></li>
+    </ul>
+</section>
+
+<section id="links" class="conteudo escondido">
+    <h2>Links Úteis</h2>
+    <ul>
+        <li><a target="_blank" href="https://saudemental.gov.br">Portal Saúde Mental</a></li>
+        <li><a target="_blank" href="https://criancaeconsumo.org.br">Criança e Consumo</a></li>
+        <li><a target="_blank" href="https://www.unicef.org/brazil">UNICEF Brasil</a></li>
+        <li><a target="_blank" href="https://www.who.int">Organização Mundial da Saúde</a></li>
+    </ul>
+</section>
+
+<section id="contato" class="conteudo escondido">
+    <h2>Contato</h2>
+    <p>📧 Email: atendimento@eacnt.org</p>
+    <p>📞 Telefone: (00) 90000-0000</p>
+
+    <form class="formulario">
+        <input type="text" placeholder="Seu nome">
+        <input type="email" placeholder="Seu email">
+        <textarea placeholder="Sua mensagem"></textarea>
+        <button>Enviar</button>
+    </form>
+</section>
+
+<footer>
+    © 2025 EACNT – Todos os direitos reservados.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
